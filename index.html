@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dream Cafe ☁️🍰</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Dream Cafe ☁️</div>
+
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('menu')">Menu</button>
+    <button onclick="showPage('booking')">Booking</button>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <div class="hero">
+    <h1>Dream Cafe 🍰</h1>
+    <p>Fresh Food • Fast Delivery • Sweet Moments</p>
+    <button onclick="showPage('menu')">Explore Menu</button>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="page">
+<h1 class="section-title">Special Menu 🍔</h1>
+
+<div class="menu-grid">
+
+  <!-- 1 -->
+  <div class="card">
+    <img src="https://t3.ftcdn.net/jpg/19/01/44/22/360_F_1901442251_UfrTMhLI1Xtmlqj88Yl14Gr2xqPYyOeN.jpg">
+    <h3>Burger Combo 🍔</h3>
+    <p class="price">₹299</p>
+    <p>Cheese Burger + Fries + Coke</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/057/935/035/small/a-pizza-with-cheese-and-toppings-on-a-wooden-board-photo.jpg">
+    <h3>Pizza 🍕</h3>
+    <p class="price">₹799</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <img src="https://thumbs.dreamstime.com/b/spicy-chicken-biryani-traditional-pot-mouthwatering-served-filled-tender-pieces-flavorful-spices-image-captures-322454670.jpg">
+    <h3>Biriyani 🍛</h3>
+    <p class="price">₹299</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <img src="https://ik.imagekit.io/saubldfer/hamstech-blog/wp-content/uploads/2021/09/Title-Image.jpg">
+    <h3>South Indian Breakfast 🍽</h3>
+    <p class="price">₹499</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/01/Bowl-of-Salad.png">
+    <h3>Healthy Salad 🥗</h3>
+    <p class="price">₹279</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <img src="https://www.shutterstock.com/image-photo/healthy-tandoori-chicken-served-paratha-600w-1199923711.jpg">
+    <h3>Paratha Grill Chicken 🍗</h3>
+    <p class="price">₹399</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 7 -->
+  <div class="card">
+    <img src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/mutton_mandi.jpg">
+    <h3>Mutton Mandi Biriyani 🍲</h3>
+    <p class="price">₹699</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <img src="https://foodhub.scene7.com/is/image/woolworthsltdprod/2101-pancakes-with-mixed-berries?wid=1300&hei=1300&fmt=png-alpha">
+    <h3>Pancake Ice Cream 🍨</h3>
+    <p class="price">₹399</p>
+    <button class="btn">Add Item</button>
+  </div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="page">
+<h1 class="section-title">Book Table 🍽</h1>
+
+<div class="form-box">
+  <input type="text" placeholder="Enter Name">
+  <input type="number" placeholder="Phone Number">
+  <input type="date">
+  <input type="time">
+  <button class="btn" onclick="bookTable()">Book Now</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+<h1 class="section-title">About Dream Cafe ❤️</h1>
+
+<div class="info-box">
+  <p>
+    Dream Cafe ☁️🍰 provides delicious food, fast service, and sweet moments.
+    We serve burgers, pizza, biriyani, desserts, and combo meals with quality taste.
+  </p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+<h1 class="section-title">Contact Us 📞</h1>
+
+<div class="form-box">
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button class="btn">Send Message</button>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Dream Cafe ☁️🍰 | Fresh Food • Fast Delivery • Sweet Moments</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
